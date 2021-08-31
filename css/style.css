@@ -1,0 +1,335 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::-webkit-backdrop,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+*,
+*::backdrop,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.button {
+  display: inline-block;
+  color: #fafafa;
+  padding: 16px 40px;
+  border-radius: 29px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 48px 128px 54px 128px;
+}
+
+.hero__img {
+  background-image: url(/assets/tablet/image-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 153px;
+  margin-bottom: 48px;
+}
+
+.hero__header {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 44px;
+  margin-bottom: 24px;
+}
+
+.hero__copy {
+  color: #87879d;
+  font-size: 16;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+
+.hero__cta {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 26px;
+}
+
+.hero__ctaDownload {
+  background-color: #4d96a9;
+  margin-bottom: 16px;
+}
+
+.hero__ctaDownload span {
+  color: #8fe3f9;
+}
+
+.hero__ctaInfo {
+  background-color: #855fb1;
+  margin-bottom: 64px;
+}
+
+.divider {
+  margin-bottom: 64px;
+}
+
+.divider.dark {
+  margin-bottom: 0;
+}
+
+.divider__line {
+  border-left: 1px solid #87879d;
+  height: 84px;
+  position: relative;
+  left: 50%;
+}
+
+.divider__num {
+  background-color: white;
+  font-size: 16px;
+  font-weight: 900;
+  color: #87879d;
+  display: inline-block;
+  border: 1px solid #87879d;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 64px;
+}
+
+.gallery__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery__img {
+  width: 151px;
+}
+
+.info {
+  margin-bottom: 64px;
+}
+
+.info.dark {
+  position: relative;
+  top: -23px;
+  margin-bottom: 0;
+  background-color: #4d96a9;
+  padding-top: 92px;
+  z-index: -1;
+}
+
+.info__tagline {
+  color: #4d96a9;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+.info__header {
+  color: #28283d;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
+.info__header.dark {
+  color: #fafafa;
+}
+
+.info__text {
+  color: grey;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.info__text.dark {
+  color: #fafafa;
+  margin-bottom: 32px;
+}
+
+.info__cta {
+  padding-bottom: 32px;
+}
+
+.info__ctaDownload {
+  background-color: #855fb1;
+}
+/*# sourceMappingURL=style.css.map */

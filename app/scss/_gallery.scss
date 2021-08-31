@@ -1,0 +1,17 @@
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+        // align-content: space-between;
+    }
+
+    &__img {
+        width: 151px;
+    }
+}

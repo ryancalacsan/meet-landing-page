@@ -1,0 +1,45 @@
+.hero {
+    &__img {
+        background-image: url(/assets/tablet/image-hero.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 153px;
+        margin-bottom: 48px;
+    }
+
+    &__header {
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 44px;
+        margin-bottom: 24px;
+    }
+
+    &__copy {
+        color: $grey;
+        font-size: 16;
+        font-weight: 500;
+        line-height: 26px;
+        margin-bottom: 32px;
+    }
+
+    &__cta {
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 26px;
+    }
+
+    &__ctaDownload {
+        background-color: $blue;
+        margin-bottom: 16px;
+
+        span {
+            color: $lightBlue;
+        }
+    }
+
+    &__ctaInfo {
+        background-color: $purple;
+        margin-bottom: 64px;
+    }
+}

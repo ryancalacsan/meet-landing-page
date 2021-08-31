@@ -1,0 +1,48 @@
+.info {
+    margin-bottom: 64px;
+    &.dark {
+        position: relative;
+        top: -23px;
+        margin-bottom: 0;
+        background-color: $blue;
+        padding-top: 92px;
+        z-index: -1;
+    }
+    &__tagline {
+        color: $blue;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 26px;
+        margin-bottom: 24px;
+    }
+
+    &__header {
+        color: $dark;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 32px;
+        margin-bottom: 32px;
+        &.dark {
+            color: $light;
+        }
+    }
+
+    &__text {
+        color: grey;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        &.dark {
+            color: $light;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__cta {
+        padding-bottom: 32px;
+    }
+
+    &__ctaDownload {
+        background-color: $purple;
+    }
+}

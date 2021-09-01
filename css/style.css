@@ -280,6 +280,9 @@ a:hover {
 @media (min-width: 64em) {
   .hero__text {
     min-width: 540px;
+    max-width: 540px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -290,8 +293,19 @@ a:hover {
   margin-bottom: 24px;
 }
 
+@media (min-width: 40em) {
+  .hero__header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 339px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
 @media (min-width: 64em) {
   .hero__header {
+    max-width: 445px;
     font-size: 64px;
     line-height: 64px;
     margin-bottom: 34px;
@@ -437,8 +451,8 @@ a:hover {
   .gallery {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
     grid-gap: 30px;
     max-width: 1110px;
     margin-bottom: 80px;

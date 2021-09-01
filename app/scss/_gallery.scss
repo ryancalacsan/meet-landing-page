@@ -17,8 +17,8 @@
     @include breakpoint-up(large) {
         margin-left: auto;
         margin-right: auto;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
         grid-gap: 30px;
         max-width: 1110px;
         margin-bottom: 80px;

@@ -1,17 +1,21 @@
 .gallery {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
     margin-bottom: 64px;
 
-    &__container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 25px;
-        justify-content: center;
-        // align-content: space-between;
+    @include breakpoint-up(medium) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 11px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 48px;
     }
 
     &__img {
-        width: 151px;
+        width: 100%;
+        border-radius: 8px;
     }
 }

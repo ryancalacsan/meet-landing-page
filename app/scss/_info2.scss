@@ -1,0 +1,49 @@
+.info2 {
+    background-color: $blue;
+    position: relative;
+    margin-bottom: 0;
+    padding-top: 92px;
+    z-index: -1;
+
+    &::before {
+        content: "";
+        background-image: url(/assets/mobile/image-footer.jpg);
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.1045;
+    }
+
+    &__header {
+        position: relative;
+        color: $light;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 32px;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        position: relative;
+        color: $light;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        margin-bottom: 32px;
+    }
+
+    &__cta {
+        position: relative;
+        padding-bottom: 72px;
+    }
+
+    &__ctaDownload {
+        background-color: $purple;
+        span {
+            color: $lightPurple;
+        }
+    }
+}

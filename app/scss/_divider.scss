@@ -1,14 +1,18 @@
 .divider {
     margin-bottom: 64px;
-    &.dark {
-        margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint-up(medium) {
+        margin-bottom: 67px;
     }
 
     &__line {
-        border-left: 1px solid $grey;
+        width: 0.1rem;
+        background-color: rgba($grey, 0.25);
         height: 84px;
-        position: relative;
-        left: 50%;
     }
 
     &__num {
@@ -17,8 +21,14 @@
         font-weight: 900;
         color: $grey;
         display: inline-block;
-        border: 1px solid $grey;
+        border: 1px solid rgba($grey, 0.25);
         padding: 15px;
         border-radius: 50%;
     }
+}
+
+.divider.divider2 {
+    margin-bottom: 0;
+    position: relative;
+    top: 25px;
 }

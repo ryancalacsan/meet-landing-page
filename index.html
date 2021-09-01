@@ -21,7 +21,18 @@
       </a>
     </header>
     <section class="hero">
-      <div class="hero__img"></div>
+      <div class="hero__img hide-for-desktop">
+        <img
+          src="/assets/tablet/image-hero.png"
+          alt="profile photos of people"
+        />
+      </div>
+      <div class="hero__imgLeft hide-for-mobile">
+        <img
+          src="/assets/desktop/image-hero-left.png"
+          alt="profile photos of people"
+        />
+      </div>
       <div class="hero__text container">
         <h1 class="hero__header">Group Chat for Everyone</h1>
         <p class="hero__copy">
@@ -30,39 +41,43 @@
         </p>
         <div class="hero__cta">
           <a href="#" class="button hero__ctaDownload"
-            >Download <span>v1.3</span></a
+            >Download<span>v1.3</span></a
           >
-          <a href="" class="button hero__ctaInfo">What is it?</a>
+          <a href="" class="button hero__ctaInfo button-sm">What is it?</a>
         </div>
+      </div>
+      <div class="hero__imgRight hide-for-mobile">
+        <img
+          src="/assets/desktop/image-hero-right.png"
+          alt="profile photos of people"
+        />
       </div>
     </section>
     <section class="divider">
       <div class="divider__line"></div>
       <p class="divider__num">01</p>
     </section>
-    <section class="gallery">
-      <div class="gallery__container container">
-        <img
-          src="/assets/desktop/image-woman-in-videocall.jpg"
-          alt="woman in videocall"
-          class="gallery__img"
-        />
-        <img
-          src="/assets/desktop/image-women-videochatting.jpg"
-          alt="women videochatting"
-          class="gallery__img"
-        />
-        <img
-          src="/assets/desktop/image-men-in-meeting.jpg"
-          alt="men in meeting"
-          class="gallery__img"
-        />
-        <img
-          src="/assets/desktop/image-man-texting.jpg"
-          alt="man texting"
-          class="gallery__img"
-        />
-      </div>
+    <section class="gallery container">
+      <img
+        src="/assets/desktop/image-woman-in-videocall.jpg"
+        alt="woman in videocall"
+        class="gallery__img"
+      />
+      <img
+        src="/assets/desktop/image-women-videochatting.jpg"
+        alt="women videochatting"
+        class="gallery__img"
+      />
+      <img
+        src="/assets/desktop/image-men-in-meeting.jpg"
+        alt="men in meeting"
+        class="gallery__img"
+      />
+      <img
+        src="/assets/desktop/image-man-texting.jpg"
+        alt="man texting"
+        class="gallery__img"
+      />
     </section>
     <section class="info container">
       <h3 class="info__tagline">Built for modern use</h3>
@@ -73,20 +88,22 @@
         data encryption, and data export.
       </div>
     </section>
-    <section class="divider dark">
+    <section class="divider divider2">
       <div class="divider__line"></div>
       <p class="divider__num">02</p>
     </section>
-    <section class="info container dark">
-      <h2 class="info__header dark">Experience more together</h2>
-      <p class="info__text dark">
-        Stay connected with reliable HD meetings and unlimited one-on-one and
-        group video sessions.
-      </p>
-      <div class="info__cta">
-        <a href="#" class="button info__ctaDownload"
-          >Download <span>v1.3</span></a
-        >
+    <section class="info2">
+      <div class="info2__container container">
+        <h2 class="info2__header">Experience more together</h2>
+        <p class="info2__text">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <div class="info2__cta">
+          <a href="#" class="button info2__ctaDownload"
+            >Download <span>v1.3</span></a
+          >
+        </div>
       </div>
     </section>
   </body>

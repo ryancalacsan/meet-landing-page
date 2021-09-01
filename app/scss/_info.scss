@@ -1,18 +1,16 @@
 .info {
-    margin-bottom: 64px;
-    &.dark {
-        position: relative;
-        top: -23px;
-        margin-bottom: 0;
-        background-color: $blue;
-        padding-top: 92px;
-        z-index: -1;
+    margin-bottom: 36px;
+
+    @include breakpoint-up(medium) {
+        margin-bottom: 55px;
     }
     &__tagline {
         color: $blue;
         font-size: 16px;
         font-weight: 900;
         line-height: 26px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
         margin-bottom: 24px;
     }
 
@@ -22,27 +20,26 @@
         font-weight: 900;
         line-height: 32px;
         margin-bottom: 32px;
-        &.dark {
-            color: $light;
+
+        @include breakpoint-up(medium) {
+            font-size: 40px;
+            line-height: 44px;
+            max-width: 445px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
     &__text {
-        color: grey;
+        color: $grey;
         font-size: 16px;
         font-weight: 500;
         line-height: 26px;
-        &.dark {
-            color: $light;
-            margin-bottom: 32px;
+
+        @include breakpoint-up(medium) {
+            max-width: 572px;
+            margin-left: auto;
+            margin-right: auto;
         }
-    }
-
-    &__cta {
-        padding-bottom: 32px;
-    }
-
-    &__ctaDownload {
-        background-color: $purple;
     }
 }

@@ -154,6 +154,7 @@ body {
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
   text-align: center;
+  background-color: #fafafa;
 }
 
 a,
@@ -203,6 +204,13 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 48px 128px 54px 128px;
+}
+
+@media (min-width: 40em) {
+  .header {
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
 }
 
 .hero {

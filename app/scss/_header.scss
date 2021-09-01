@@ -2,4 +2,8 @@
     display: flex;
     justify-content: center;
     padding: 48px 128px 54px 128px;
+    @include breakpoint-up(medium) {
+        padding-top: 80px;
+        padding-bottom: 64px;
+    }
 }

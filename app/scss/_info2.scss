@@ -3,7 +3,26 @@
     position: relative;
     margin-bottom: 0;
     padding-top: 92px;
-    z-index: -1;
+    @include breakpoint-up(large) {
+        padding: 116px 165px 104px 165px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__container {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoint-up(large) {
+            flex-direction: row;
+            justify-content: space-between;
+            min-width: 950px;
+            max-width: 1110px;
+        }
+    }
 
     &::before {
         content: "";
@@ -15,6 +34,15 @@
         bottom: 0px;
         left: 0px;
         opacity: 0.1045;
+
+        @include breakpoint-up(medium) {
+            background-image: url(/assets/tablet/image-footer.jpg);
+        }
+
+        @include breakpoint-up(large) {
+            background-image: url(/assets/desktop/image-footer.jpg);
+            background-position: center;
+        }
     }
 
     &__header {
@@ -24,6 +52,17 @@
         font-weight: 900;
         line-height: 32px;
         margin-bottom: 32px;
+        @include breakpoint-up(medium) {
+            font-size: 40px;
+            line-height: 44px;
+            max-width: 457px;
+        }
+
+        @include breakpoint-up(large) {
+            text-align: left;
+            max-width: 350px;
+            margin-bottom: 0;
+        }
     }
 
     &__text {
@@ -33,17 +72,34 @@
         font-weight: 500;
         line-height: 26px;
         margin-bottom: 32px;
+
+        @include breakpoint-up(medium) {
+            max-width: 573px;
+        }
+        @include breakpoint-up(large) {
+            text-align: left;
+            max-width: 350px;
+            margin-bottom: 0;
+        }
     }
 
     &__cta {
         position: relative;
         padding-bottom: 72px;
+
+        @include breakpoint-up(large) {
+            padding-bottom: 0;
+        }
     }
 
     &__ctaDownload {
         background-color: $purple;
         span {
             color: $lightPurple;
+        }
+
+        &:hover {
+            background-color: #b18bdd;
         }
     }
 }

@@ -170,8 +170,13 @@ a:hover {
 .button {
   display: inline-block;
   color: #fafafa;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 26px;
   padding: 16px 40px;
   border-radius: 29px;
+  -webkit-transition: background-color 150ms ease-in-out;
+  transition: background-color 150ms ease-in-out;
 }
 
 .button-sm {
@@ -312,6 +317,12 @@ a:hover {
   }
 }
 
+@media (min-width: 64em) {
+  .hero__cta {
+    margin-bottom: 103px;
+  }
+}
+
 .hero__ctaDownload {
   background-color: #4d96a9;
   margin-bottom: 16px;
@@ -323,10 +334,18 @@ a:hover {
   color: #8fe3f9;
 }
 
+.hero__ctaDownload:hover {
+  background-color: #71c0d4;
+}
+
 .hero__ctaInfo {
   background-color: #855fb1;
   margin-left: 8px;
   margin-right: 8px;
+}
+
+.hero__ctaInfo:hover {
+  background-color: #b18bdd;
 }
 
 .divider {
@@ -344,11 +363,18 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 @media (min-width: 40em) {
   .divider {
     margin-bottom: 67px;
+  }
+}
+
+@media (min-width: 64em) {
+  .divider {
+    margin-bottom: 64px;
   }
 }
 
@@ -399,6 +425,18 @@ a:hover {
   }
 }
 
+@media (min-width: 64em) {
+  .gallery {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-gap: 30px;
+    max-width: 1110px;
+    margin-bottom: 80px;
+  }
+}
+
 .gallery__img {
   width: 100%;
   border-radius: 8px;
@@ -414,6 +452,12 @@ a:hover {
   }
 }
 
+@media (min-width: 64em) {
+  .info {
+    margin-bottom: 47px;
+  }
+}
+
 .info__tagline {
   color: #4d96a9;
   font-size: 16px;
@@ -422,6 +466,12 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 24px;
+}
+
+@media (min-width: 40em) {
+  .info__tagline {
+    margin-bottom: 16px;
+  }
 }
 
 .info__header {
@@ -457,12 +507,63 @@ a:hover {
   }
 }
 
+@media (min-width: 64em) {
+  .info__text {
+    font-size: 18px;
+    max-width: 520px;
+  }
+}
+
 .info2 {
   background-color: #4d96a9;
   position: relative;
   margin-bottom: 0;
   padding-top: 92px;
-  z-index: -1;
+}
+
+@media (min-width: 64em) {
+  .info2 {
+    padding: 116px 165px 104px 165px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.info2__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 64em) {
+  .info2__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 950px;
+    max-width: 1110px;
+  }
 }
 
 .info2::before {
@@ -477,6 +578,19 @@ a:hover {
   opacity: 0.1045;
 }
 
+@media (min-width: 40em) {
+  .info2::before {
+    background-image: url(/assets/tablet/image-footer.jpg);
+  }
+}
+
+@media (min-width: 64em) {
+  .info2::before {
+    background-image: url(/assets/desktop/image-footer.jpg);
+    background-position: center;
+  }
+}
+
 .info2__header {
   position: relative;
   color: #fafafa;
@@ -484,6 +598,22 @@ a:hover {
   font-weight: 900;
   line-height: 32px;
   margin-bottom: 32px;
+}
+
+@media (min-width: 40em) {
+  .info2__header {
+    font-size: 40px;
+    line-height: 44px;
+    max-width: 457px;
+  }
+}
+
+@media (min-width: 64em) {
+  .info2__header {
+    text-align: left;
+    max-width: 350px;
+    margin-bottom: 0;
+  }
 }
 
 .info2__text {
@@ -495,9 +625,29 @@ a:hover {
   margin-bottom: 32px;
 }
 
+@media (min-width: 40em) {
+  .info2__text {
+    max-width: 573px;
+  }
+}
+
+@media (min-width: 64em) {
+  .info2__text {
+    text-align: left;
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+}
+
 .info2__cta {
   position: relative;
   padding-bottom: 72px;
+}
+
+@media (min-width: 64em) {
+  .info2__cta {
+    padding-bottom: 0;
+  }
 }
 
 .info2__ctaDownload {
@@ -506,5 +656,9 @@ a:hover {
 
 .info2__ctaDownload span {
   color: #d9b8ff;
+}
+
+.info2__ctaDownload:hover {
+  background-color: #b18bdd;
 }
 /*# sourceMappingURL=style.css.map */

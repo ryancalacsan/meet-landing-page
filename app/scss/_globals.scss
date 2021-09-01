@@ -30,8 +30,12 @@ a:hover {
 .button {
     display: inline-block;
     color: $light;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
     padding: 16px 40px;
     border-radius: 29px;
+    transition: background-color 150ms ease-in-out;
 }
 
 .button-sm {

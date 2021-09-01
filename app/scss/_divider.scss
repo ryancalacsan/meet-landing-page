@@ -4,9 +4,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
     @include breakpoint-up(medium) {
         margin-bottom: 67px;
+    }
+
+    @include breakpoint-up(large) {
+        margin-bottom: 64px;
     }
 
     &__line {

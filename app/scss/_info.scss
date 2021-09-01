@@ -4,6 +4,10 @@
     @include breakpoint-up(medium) {
         margin-bottom: 55px;
     }
+
+    @include breakpoint-up(large) {
+        margin-bottom: 47px;
+    }
     &__tagline {
         color: $blue;
         font-size: 16px;
@@ -12,6 +16,10 @@
         text-transform: uppercase;
         letter-spacing: 4px;
         margin-bottom: 24px;
+
+        @include breakpoint-up(medium) {
+            margin-bottom: 16px;
+        }
     }
 
     &__header {
@@ -40,6 +48,11 @@
             max-width: 572px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        @include breakpoint-up(large) {
+            font-size: 18px;
+            max-width: 520px;
         }
     }
 }

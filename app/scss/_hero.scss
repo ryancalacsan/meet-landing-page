@@ -84,6 +84,10 @@
         @include breakpoint-up(medium) {
             margin-bottom: 80px;
         }
+
+        @include breakpoint-up(large) {
+            margin-bottom: 103px;
+        }
     }
 
     &__ctaDownload {
@@ -95,11 +99,19 @@
         span {
             color: $lightBlue;
         }
+
+        &:hover {
+            background-color: #71c0d4;
+        }
     }
 
     &__ctaInfo {
         background-color: $purple;
         margin-left: 8px;
         margin-right: 8px;
+
+        &:hover {
+            background-color: #b18bdd;
+        }
     }
 }
